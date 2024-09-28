@@ -1,53 +1,99 @@
-.homepage {
+  .homepage {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    width: 100%;
-    background-color: #f4f4f9;
-    position: relative;
+    min-height: 100vh;
+    background-color: #f5f5f5;
+    padding: 2rem;
   }
   
   .content {
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
-    z-index: 1;
   }
   
-  .profile {
-    margin-bottom: 50px;
-  }
-  
-  .profile-img {
-    width: 150px;
-    height: 150px;
+  .profile-photo {
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     object-fit: cover;
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
-    margin-bottom: 10px;
+    border: 4px solid #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+    display: block; 
   }
   
   .name {
-    font-size: 2.5rem;
-    font-weight: 600;
+    font-size: 3rem;
     color: #333;
-    margin-bottom: 10px;
+    margin-bottom: 0.5rem;
   }
   
-  .intro {
-    font-size: 1.2rem;
-    font-weight: 400;
+  .title {
+    font-size: 1.5rem;
     color: #666;
-    max-width: 600px;
-    margin: 0 auto;
-    line-height: 1.6;
+    margin-bottom: 0.5rem;
   }
   
-  /* Dock position fix */
-  .dock-container {
-    position: fixed;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
+  .expertise {
+    font-size: 1.1rem;
+    color: #888;
+    margin-bottom: 1.5rem;
   }
+  
+  .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .social-links a {
+    color: #333;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+  }
+  
+  .social-links a:hover {
+    color: #007bff;
+  }
+  
+  .bio {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+  }
+  
+  @media (max-width: 768px) {
+    .name {
+      font-size: 2.5rem;
+    }
+  
+    .title {
+      font-size: 1.3rem;
+    }
+  
+    .expertise {
+      font-size: 1rem;
+    }
+  
+    .bio {
+      font-size: 1rem;
+    }
+  
+    .social-links {
+      display: flex; 
+    }
+  }
+  
+  @media (min-width: 769px) {
+    .social-links {
+      display: none; 
+    }
+  }
+  
   

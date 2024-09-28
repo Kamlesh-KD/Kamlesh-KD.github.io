@@ -1,0 +1,77 @@
+.publications {
+    padding: 80px;
+    background-color: #f9f9f9;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .publications h2 {
+    font-size: 40px;
+    margin-bottom: 40px;
+    color: #333;
+    text-align: center;
+  }
+  
+  .publications-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    width: 100%;
+    max-width: 1200px;
+  }
+  
+  .publication-item {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .publication-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .publication-item h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #2d303d;
+  }
+  
+  .publication-item p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 5px;
+  }
+  
+  .publication-item a {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 8px 15px;
+    background-color: #3498db;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .publication-item a:hover {
+    background-color: #2980b9;
+  }
+  
+  @media (max-width: 768px) {
+    .publications {
+      padding: 40px 20px;
+    }
+  
+    .publications h2 {
+      font-size: 32px;
+    }
+  
+    .publication-item {
+      padding: 20px;
+    }
+  }

@@ -41,7 +41,7 @@
   
   .dock-item {
     aspect-ratio: 1 / 1;
-    background-color: #888;
+    background-color: #5329c5;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -52,7 +52,7 @@
 
   .social-dock-item{
     aspect-ratio: 1 / 1;
-    background-color: #888;
+    background-color: #7259b8;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -80,7 +80,7 @@
     position: absolute;
     bottom: 1.7rem;
     font-size: 0.9rem;
-    color: #333;
+    color: #ffffff;
     text-align: center;
     white-space: nowrap;
     transition: opacity 0.2s ease-in-out;
@@ -88,7 +88,7 @@
   }
   
   .mobile-dock-item {
-    background-color: #888;
+    background-color: #5619c7;
     border-radius: 50%;
     padding: 0.5rem;
     display: flex;
@@ -118,7 +118,7 @@
   
   .dock-link.active,
   .mobile-dock-link.active {
-    color: #00bcd4; 
+    color: #f2feff; 
   }
 
 

@@ -6,6 +6,7 @@ import Dock from './components/Dock'
 import Publications from './pages/publications'
 import Projects from './pages/projects'
 import CV from './pages/cv'
+import Skills from './components/skill';
 
 function App() {
   smoothscroll.polyfill();
@@ -15,6 +16,7 @@ function App() {
     <section id="home">
           <HomePage />
         </section>
+        <Skills/>
         <section id="publications">
           <Publications />
         </section>

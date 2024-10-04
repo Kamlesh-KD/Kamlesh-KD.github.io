@@ -8,7 +8,8 @@ const Publications = () => {
       authors: "Kamlesh Ranabhat,I. P. Paneru, I. Sharma, and K. Pathak",
       journal: "Health Informatics Journal",
       year: 2023,
-      link: "https://example.com/publication1"
+      link: "https://example.com/publication1",
+      status: "Under review"
     },
   ];
 
@@ -21,6 +22,7 @@ const Publications = () => {
             <h3>{pub.title}</h3>
             <p>{pub.authors}</p>
             <p>{pub.journal}, {pub.year}</p>
+            <p className="publication-status">{pub.status}</p> {/* Added status */}
             <a href={pub.link} target="_blank" rel="noopener noreferrer">Read More</a>
           </div>
         ))}

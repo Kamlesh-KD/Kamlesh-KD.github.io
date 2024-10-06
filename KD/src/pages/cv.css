@@ -1,4 +1,4 @@
-.cv-section {
+   .cv-section {
     padding: 90px;
     background-color: #f9f9f9;
     min-height: 60vh;
@@ -49,6 +49,12 @@
     justify-content: center;
     align-items: center;
     z-index: 1000;
+    opacity: 0; 
+    transition: opacity 0.3s ease; 
+  }
+  
+  .modal-overlay.open {
+    opacity: 1; 
   }
   
   .modal-content {
@@ -58,6 +64,14 @@
     width: 60%;
     height: 95%;
     position: relative;
+    transform: scale(0); 
+    opacity: 0; 
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+  
+  .modal-content.open {
+    transform: scale(1);
+    opacity: 1; 
   }
   
   .close-btn {
@@ -103,5 +117,4 @@
       height: 90%;
     }
   }
-
   

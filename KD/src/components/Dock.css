@@ -121,6 +121,20 @@
   .mobile-dock-link.active {
     color: #f2feff; 
   }
-
+  .cv-icon {
+    background-color: #5329c5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px; 
+    height: 25px; 
+    overflow: hidden; 
+  }
+  
+  .cv-icon img {
+    width: 100%; 
+    height: auto; 
+  }
+  
 
 

@@ -3,13 +3,18 @@ import './cv.css';
 
 const CV = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isClosing, setIsClosing] = useState(false);
 
   const openModal = () => {
     setIsModalOpen(true);
+    setIsClosing(false);
   };
 
   const closeModal = () => {
-    setIsModalOpen(false);
+    setIsClosing(true);
+    setTimeout(() => {
+      setIsModalOpen(false);
+    }, 300);
   };
 
   return (
@@ -19,8 +24,8 @@ const CV = () => {
       <button onClick={openModal} className="view-cv-btn">View CV</button>
 
       {isModalOpen && (
-        <div className="modal-overlay" onClick={closeModal}>
-          <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+        <div className={`modal-overlay ${isClosing ? '' : 'open'}`} onClick={closeModal}>
+          <div className={`modal-content ${isClosing ? '' : 'open'}`} onClick={(e) => e.stopPropagation()}>
             <button className="close-btn" onClick={closeModal}>&times;</button>
             <iframe
               src="Kamlesh_Ranabhat_CV.pdf"
@@ -37,4 +42,3 @@ const CV = () => {
 };
 
 export default CV;
-

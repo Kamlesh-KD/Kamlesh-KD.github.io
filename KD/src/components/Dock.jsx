@@ -1,7 +1,8 @@
 import React, { useRef, useState, useEffect } from "react";
 import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
-import { FaHome, FaBook, FaProjectDiagram, FaFileAlt } from "react-icons/fa";
+import { FaHome, FaBook, FaProjectDiagram } from "react-icons/fa";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
+import cv from '/cv.png';
 import { MdOutlineMail } from "react-icons/md";
 import { FaGoogleScholar } from "react-icons/fa6";
 import { useWindowSize } from "../utils/useWindowSize";
@@ -85,7 +86,7 @@ function DesktopDock({ activeLink, setActiveLink }) {
         setActiveLink={setActiveLink}
       />
       <AppIcon
-        icon={<FaFileAlt />}
+        icon={<div className="cv-icon"><img src={cv} alt="CV" /></div>}
         link="#cv"
         label="CV"
         mouseX={mouseX}
@@ -168,7 +169,7 @@ function MobileDock({ activeLink, setActiveLink }) {
         setActiveLink={setActiveLink}
       />
       <MobileAppIcon
-        icon={<FaFileAlt />}
+        icon={<div className="cv-icon"><img src={cv} alt="CV" /></div>}
         link="#cv"
         label="CV"
         isActive={activeLink === "#cv"}
@@ -177,47 +178,6 @@ function MobileDock({ activeLink, setActiveLink }) {
     </div>
   );
 }
-
-// function AppIcon({ icon, link, label, mouseX, isActive, setActiveLink }) {
-//   const ref = useRef(null);
-
-//   const distance = useTransform(mouseX, (val) => {
-//     const bounds = ref.current?.getBoundingClientRect() ?? { x: 0, width: 0 };
-//     return val - bounds.x - bounds.width / 2;
-//   });
-
-//   const widthSync = useTransform(distance, [-150, 0, 150], [40, 80, 40]);
-//   const width = useSpring(widthSync, { mass: 0.1, stiffness: 150, damping: 12 });
-
-//   const scale = useTransform(distance, [-150, 0, 150], [1, 1.3, 1]);
-//   const yOffset = useTransform(distance, [-150, 0, 150], [0, -10, 0]);
-
-//   const handleClick = (e) => {
-//     e.preventDefault();
-//     const targetElement = document.querySelector(link);
-//     if (targetElement) {
-//       targetElement.scrollIntoView({ behavior: "smooth" });
-//     }
-//     setActiveLink(link);
-//   };
-
-//   return (
-//     <motion.div
-//       ref={ref}
-//       style={{ width, scale, y: yOffset }}
-//       className="dock-item"
-//     >
-//       <a
-//         href={link}
-//         className={`dock-link ${isActive ? "active" : ""}`}
-//         onClick={handleClick}
-//       >
-//         {icon}
-//       </a>
-//       <span className="label">{label}</span>
-//     </motion.div>
-//   );
-// }
 
 function AppIcon({ icon, link, label, mouseX, isActive, setActiveLink }) {
   const ref = useRef(null);

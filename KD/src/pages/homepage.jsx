@@ -18,7 +18,7 @@ const HomePage = () => {
         animate={{ opacity: 1 }}
         transition={{ duration: 0.8 }}
       >
-        <img src="cover.jpg" alt="Cover" className="cover-img" />
+        <img src="cover1.png" alt="Cover" className="cover-img" />
       </motion.div>
 
       <motion.div 
@@ -27,14 +27,14 @@ const HomePage = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
       >
-        <motion.img 
-          src="kamlesh.jpg" 
-          alt="Kamlesh Ranabhat" 
-          className="profile-photo"
-          initial={{ scale: 0.8 }}
-          animate={{ scale: 1 }}
-          transition={{ duration: 0.5 }}
-        />
+          <motion.img 
+            src="kamlesh1.png" 
+            alt="Kamlesh Ranabhat" 
+            className="profile-photo"
+            initial={{ scale: 0.8 }}
+            animate={{ scale: 1 }}
+            transition={{ duration: 0.5 }}
+          />
         <motion.h1 
           className="name"
           initial={{ opacity: 0 }}
@@ -79,7 +79,7 @@ const HomePage = () => {
           transition={{ delay: isMobile ? 1.1 : 0.9, duration: 0.5 }}
         >
           I’m passionate about medical image informatics, especially in the areas of cancer diagnosis and prognosis. I’m excited about the potential of combining computer vision and deep learning with medical science to drive innovative solutions. 
-          <br/><br/>Eager to collaborate with like-minded individuals and contribute to groundbreaking research projects and make a real impact in healthcare.
+          <br/><br/>Eager to collaborate with like-minded people and contribute to groundbreaking research projects and make a real impact in healthcare.
         </motion.p>
       </motion.div>
     </div>

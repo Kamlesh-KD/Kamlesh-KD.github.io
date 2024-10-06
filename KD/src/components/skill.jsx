@@ -61,14 +61,14 @@ const Skills = () => {
       <div className="skills-category">
         <h3>Libraries</h3>
         <div className="skills-container">
-          {renderIcons(libraries, 1)} {/* Delay multiplier to trigger after languages */}
+          {renderIcons(libraries, 1)} 
         </div>
       </div>
 
       <div className="skills-category">
         <h3>Tools</h3>
         <div className="skills-container">
-          {renderIcons(tools, 2)} {/* Delay multiplier to trigger after libraries */}
+          {renderIcons(tools, 2)} 
         </div>
       </div>
     </div>

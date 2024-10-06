@@ -24,12 +24,20 @@
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 3s ease, box-shadow 3s ease;
     overflow: hidden;
     width: 100%;
     max-width: 625px;
-  }
-  
+    opacity: 0; 
+    transform: translateY(30px); 
+    transition: opacity 3s ease, transform 3s ease; 
+}
+
+.fade-in {
+    opacity: 1; 
+    transform: translateY(0); 
+}
+
   .project-card h3 {
     font-size: 22px;
     margin-bottom: 10px;
@@ -73,7 +81,7 @@
     display: inline-block;
     margin: 10px;
     padding: 8px 15px;
-    background-color: #2ecc71;
+    background-color: #5329c5;
     color: white;
     border: none;
     border-radius: 5px;
@@ -82,7 +90,7 @@
   }
   
   .learn-more-btn:hover {
-    background-color: #27ae60;
+    background-color: #250f5f;
   }
   
   .extra-info-overlay {

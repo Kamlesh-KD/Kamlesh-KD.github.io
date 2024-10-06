@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { IoIosCloseCircle } from "react-icons/io";
 import './cv.css';
 
 const CV = () => {
@@ -26,7 +27,7 @@ const CV = () => {
       {isModalOpen && (
         <div className={`modal-overlay ${isClosing ? '' : 'open'}`} onClick={closeModal}>
           <div className={`modal-content ${isClosing ? '' : 'open'}`} onClick={(e) => e.stopPropagation()}>
-            <button className="close-btn" onClick={closeModal}>&times;</button>
+            <button className="close-btn" onClick={closeModal}><IoIosCloseCircle size={50} color='#ff605c'/></button>
             <iframe
               src="Kamlesh_Ranabhat_CV.pdf"
               title="CV"

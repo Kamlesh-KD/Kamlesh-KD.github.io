@@ -6,7 +6,7 @@ const Publications = () => {
     {
       title: "Early Stage Diagnosis of Diabetic Retinopathy using Nested U-Net Architecture",
       authors: "Kamlesh Ranabhat, I. P. Paneru, I. Sharma,K. Pathak, and N. Lamichhane",
-      journal: "Health Informatics Journal",
+      journal: "Computers in Biology and Medicine, 2025",
       year: 2023,
       link: "https://example.com/publication1",
       status: "Under review"

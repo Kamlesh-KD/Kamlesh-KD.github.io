@@ -34,7 +34,7 @@ const CV = () => {
               width="100%"
               height="100%"
             />
-            <a href="Kamlesh_Ranabhat_CV.pdf" download className="download-btn">Download CV</a>
+            <a href="Kamlesh_Ranabhat_CV 1.pdf" download className="download-btn">Download CV</a>
           </div>
         </div>
       )}

@@ -29,12 +29,12 @@ const CV = () => {
           <div className={`modal-content ${isClosing ? '' : 'open'}`} onClick={(e) => e.stopPropagation()}>
             <button className="close-btn" onClick={closeModal}><IoIosCloseCircle size={50} color='#ff605c'/></button>
             <iframe
-              src="Kamlesh_Ranabhat_CV 1.pdf"
+              src="Kamlesh_Ranabhat_CV (1).pdf"
               title="CV"
               width="100%"
               height="100%"
             />
-            <a href="Kamlesh_Ranabhat_CV 1.pdf" download className="download-btn">Download CV</a>
+            <a href="Kamlesh_Ranabhat_CV (1).pdf" download className="download-btn">Download CV</a>
           </div>
         </div>
       )}
